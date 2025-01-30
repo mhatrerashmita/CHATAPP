@@ -24,7 +24,7 @@ socket.on('user-joined', userName => {
 
 // Receive messages from other users
 socket.on('receive', ({ name, message }) => {
-    appendMessage(`${name}: ${message}`, 'left'); // ✅ Show only on receiver's left
+    appendMessage(`${name}: ${message}`, 'left'); 
 });
 
 // Notify when a user leaves
