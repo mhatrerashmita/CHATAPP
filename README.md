@@ -28,4 +28,4 @@ RashChat is a real-time chat application built using **Node.js**, **Express**, a
 
 1. Clone the repository to your local machine:
    ```sh
-   git clone <your-repository-url>
+   git clone https://github.com/mhatrerashmita/CHATAPP.git)
