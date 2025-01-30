@@ -1,0 +1,163 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ece5dd;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #075e54;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Container Styles */
+.container {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #e5ddd5;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Send Message Section Styles */
+.send {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.send form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.send input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-right: 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+.send button {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background-color: #25d366;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.send button:hover {
+    background-color: #128c7e;
+}
+
+.send button:active {
+    background-color: #075e54;
+}
+
+/* Message Bubble Styles */
+.message {
+    max-width: 70%;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    clear: both;
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.right {
+    float: right;
+    background-color: #dcf8c6;
+    color: #000;
+    border: 1px solid #c3e6cb;
+}
+
+.left {
+    float: left;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #000;
+}
+
+/* Emoji Button Styles */
+.emoji-btn {
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 5px;
+    color: #888;
+    transition: color 0.3s;
+}
+
+.emoji-btn:hover {
+    color: #128c7e;
+}
+
+/* Scrollbar Styles */
+.container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

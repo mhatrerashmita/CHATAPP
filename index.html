@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RashChat - Realtime Node Chat</title>
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <img class="logo" src="logo.jpg" alt="">
+        <h1>Welcome to Rashudiscuss Chat</h1>
+    </nav>
+    <div class="container" id="message-container">
+        <!-- Messages will be appended here -->
+    </div>
+    <div class="send">
+        <form id="send-container">
+            <input type="text" id="messageinp" placeholder="Type your message...">
+            <input type="file" id="fileInput" accept="image/*,video/*">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
